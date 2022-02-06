@@ -1,0 +1,377 @@
+.rss .rss-list .item{
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    min-height: 328px;
+    position: relative;
+}
+
+.rss .rss-list .item .top{
+    height: 100px;
+}
+
+.rss .rss-list .item .top .name{
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.rss .rss-list .item .top .link{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+.rss .rss-list .item .icon{
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    font-size: 60px;
+    top: -6px;
+    margin-top: -33px;
+    background: #fff;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 73px;
+    color: #f7a400;
+}
+
+
+.rss .post-overplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.rss .post-type .item a{
+    border-left: 1px solid #f4f4f4;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 12px 15px;
+    color: #74788d;
+    display: block;
+}
+
+.rss .post-type .item:first-child a{
+    border-left: none;
+}
+
+.rss .post-type .item.active a{
+    background: #5578eb;
+    color: #fff;
+}
+
+.popup-rss-feeds{
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    height: calc(100% - 58px);
+}
+
+.popup-rss-feeds .title{
+    display: inline-block;
+}
+
+.popup-rss-feeds .toolbar{
+    float: right;
+}
+
+.popup-rss-feeds .toolbar .btn{
+    font-size: 18px;
+    padding: 2px 0;
+    -webkit-transition: all .5s,opacity .5s,-webkit-transform .5s;
+    -o-transition: all .5s,opacity .5s,-o-transform .5s;
+    transition: all .5s,opacity .5s,transform .5s;
+}
+
+.popup-rss-feeds .toolbar .btn:hover{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.popup-rss-feeds .rss-item{
+    border-top: 1px solid #f4f4f4;
+    display: inline-block;
+    color: #7d7e80;
+    width: 100%;
+}
+
+.popup-rss-feeds .rss-item:hover,
+.popup-rss-feeds .rss-item.active{
+    background-color: rgba(85,120,235,.1);
+}
+
+.popup-rss-feeds .caption textarea{
+    min-height: 100px;
+}
+
+.popup-rss-feeds .caption .emojionearea{
+    border-radius: 4px 4px 0 0;
+}
+
+.popup-rss-feeds .caption .caption-toolbar{
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    background: #fbfbfb;
+    border-radius: 0 0 4px 4px;
+    height: 30px;
+}
+
+.popup-rss-feeds .caption .caption-toolbar .item{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    display: inline-block;
+    border-right: 1px solid #f1f1f1;
+    float: left;
+}
+
+.popup-rss-feeds .caption .caption-toolbar a.item{
+    color: #74788d;
+}
+
+.popup-rss-feeds .caption .caption-toolbar a.item:hover{
+    background-color: #5d78ff;
+    color: #fff;
+}
+
+.popup-rss-feeds .caption .caption-help .count-word{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.rss-box-schedule{
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    background: #eef1fd;
+    width: 100%;
+    padding: 10px 25px;
+    border-top: 1px solid #f4f4f4;
+    margin-left: -25px;
+}
+
+/*
+/ Schedule
+*/
+.rss .monthly-day .monthly-event-indicator span{
+    font-size: 12px;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.rss .monthly-day.active{
+    background-color: rgba(85,120,235,.1);
+}
+
+.rss .schedules-list{
+    margin-top: -25px;
+}
+
+.rss .schedules-list .headline{
+    height: 75px;
+    margin-left: -25px;
+    margin-right: -25px;
+    border-bottom: 1px solid #f4f4f4;
+    text-align: center;
+    line-height: 75px;
+    margin-bottom: 15px;
+    padding: 0 25px;
+}
+
+.rss .schedules-list .headline .title{
+    color: #5d78ff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.rss .schedules-list .headline .title span{
+    margin-left: 5px;
+}
+
+.rss .calendar{
+    margin-top: -25px;
+    margin-bottom: -25px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.rss .schedules-list{
+    margin-bottom: -25px;
+}
+
+.rss .schedules-list .item{
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    padding: 15px;
+    position: relative;
+    min-height: 152px;
+    margin-bottom: 15px;
+}
+
+.rss .schedules-list .item .media{
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: rgba(85,120,235,.1);
+    position: absolute;
+    overflow: hidden;
+}
+
+.rss .schedules-list .item .media .video-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 15;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+}
+
+/* .rss .schedules-list .item .media video{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    z-index: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+} */
+
+.rss .schedules-list .item .media .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-position: center;
+    background-size: cover;
+}
+
+.rss .schedules-list .item .media .link,
+.rss .schedules-list .item .media .text{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-position: center;
+    background-size: cover;
+    font-size: 50px;
+    color: #5d78ff;
+    line-height: 120px;
+    text-align: center;
+}
+
+.rss .schedules-list .item .media .carousel-item{
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    background-position: center;
+    background-size: cover;
+}
+
+.rss .schedules-list .item .media .carousel-inner{
+    border-radius: 4px;
+}
+
+.rss .schedules-list .item .media .carousel-indicators{
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rss .schedules-list .item .media .carousel-indicators li{
+    width: 7px;
+    height: 7px;
+}
+
+.rss .schedules-list .item .info{
+    margin-left: 135px;
+    margin-right: 15px;
+}
+
+.rss .schedules-list .item .info i{
+    color: #5d78ff;
+}
+
+.rss .schedules-list .item .info span{
+    margin-left: 5px;
+}
+
+.rss .schedules-list .item .info .name{
+    font-weight: 500;
+}
+
+.rss .schedules-list .item .info .caption{
+    overflow: hidden;
+    height: 63px;
+    margin-top: 5px;
+    margin-bottom: 11px;
+    color: #74788d;
+}
+
+.rss .schedules-list .headline .toolbar{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.rss .schedules-list .item .toolbar{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.rss .schedules-list .toolbar .dropdown-toggle{
+    padding: 0
+}
+
+.rss .schedules-list .toolbar .dropdown-toggle:after{
+    display: none;
+}
+
+.rss .schedules-list .item .icon{
+    position: absolute;
+    z-index: 10;
+    background: transparent;
+    padding: 5px 9px;
+    border-radius: 4px 0 4px 0;
+    color: #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.rss .schedules-list .item .status{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 0 0 4px 4px;
+}
+/*
+/ End schedule
+*/
